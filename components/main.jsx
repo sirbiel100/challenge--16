@@ -10,10 +10,10 @@ function Main() {
     return (
         <section className={styles.main}>
 
-            <img src='../../../card.svg' />
+            <img src='../card.svg' />
 
             <div className={styles.profile}>
-                <img src='../../../image-victor.jpg' alt='profile' />
+                <img src='../image-victor.jpg' alt='profile' />
             </div>
 
             <div className={styles.textContent}>
