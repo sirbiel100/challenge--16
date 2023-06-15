@@ -12,7 +12,7 @@ function Main() {
         <section className={styles.main}>
 
                 <Image
-                src="/card.svg"
+                src="card.svg"
                 width={200}
                 height={200}
                 alt='SVG Card'
