@@ -1,0 +1,32 @@
+.BgRight {
+    position: absolute;
+    width: max-content;
+    height: auto;
+    top: 20em;
+    left: 50em;
+    z-index: -1;
+}
+
+.BgLeft {
+    position: absolute;
+    width: max-content;
+    height: auto;
+    bottom: 20em;
+    right: 50em;
+    z-index: -1;
+}
+
+@media (max-width: 700px) {
+
+    .BgLeft {
+        bottom: 10em;
+        right: clamp(5em, 50vw, 20em);
+    }
+    
+
+    .BgRight {
+        top: 10em;
+        left: clamp(5em, 50vw, 20em);   
+    }
+    
+}
