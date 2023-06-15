@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/main.module.css';
 import NumberCounter from 'number-counter';
 import Image from 'next/image';
+import ProfilePicture from '/public/image-victor.jpg'
 import { motion } from 'framer-motion';
 
 function Main() {
@@ -21,7 +22,7 @@ function Main() {
 
             <div className={styles.profile}>
                 <Image
-                src="/image-victor.jpg"
+                src={ProfilePicture}
                 width={100}
                 height={100}
                 alt='Profile Picture'
