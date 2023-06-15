@@ -19,7 +19,7 @@ body {
 }
 
 body::after {
-  content: url(../public/bg-pattern-bottom.svg);
+  content: url(/bg-pattern-bottom.svg);
   position: absolute;
   top: 20em;
   left: 50em;
@@ -27,7 +27,7 @@ body::after {
 }
 
 body::before {
-  content: url(../public/bg-pattern-top.svg);
+  content: url(/bg-pattern-top.svg);
   position: absolute;
   bottom: 20em;
   right: 50em;
@@ -39,12 +39,12 @@ body::before {
     touch-action: pinch-zoom;
   }
   body::before {
-    content: url(../public/bg-pattern-top.svg);
+    content: url(/bg-pattern-top.svg);
     bottom: 10em;
     right: clamp(5em, 50vw, 20em);
   }
   body::after {
-    content: url(../public/bg-pattern-bottom.svg);
+    content: url(/bg-pattern-bottom.svg);
     top: 10em;
     left: clamp(5em, 50vw, 20em);
   }
