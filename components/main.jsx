@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/main.module.css';
 import NumberCounter from 'number-counter';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 function Main() {
@@ -10,10 +11,21 @@ function Main() {
     return (
         <section className={styles.main}>
 
-            <img src='../card.svg' />
+                <Image
+                src="/card.svg"
+                width={200}
+                height={200}
+                alt='SVG Card'
+                className={styles.svgImage}
+                />
 
             <div className={styles.profile}>
-                <img src='../image-victor.jpg' alt='profile' />
+                <Image
+                src="/image-victor.jpg"
+                width={100}
+                height={100}
+                alt='Profile Picture'
+                />
             </div>
 
             <div className={styles.textContent}>
