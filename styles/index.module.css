@@ -1,7 +1,7 @@
 .BgRight {
   position: absolute;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 50%;
+  width: 100%;
   height: auto;
   bottom: -30%;
   right: -5%;
@@ -10,8 +10,8 @@
 
 .BgLeft {
   position: absolute;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 50%;
+  width: 100%;
   height: auto;
   top: -30%;
   left: -5%;
@@ -20,11 +20,15 @@
 
 @media (max-width: 700px) {
   .BgLeft {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
     left: auto;
     bottom: 10em;
     right: clamp(5em, 50vw, 20em);
   }
   .BgRight {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
     top: 10em;
     left: clamp(5em, 50vw, 20em);
   }
